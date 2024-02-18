@@ -1,6 +1,7 @@
 ﻿#define BOOST_TEST_MODULE test_version
 
 #include "Matrix.h"
+#include <string>
 #include <boost/test/unit_test.hpp>
 #include <boost/test/unit_test_parameters.hpp>
 using namespace boost::unit_test;
@@ -42,11 +43,11 @@ BOOST_AUTO_TEST_CASE(test1)
 		y = i.first.second;
 		v = i.second;
 		//cout << x << y << v << endl;
-		str += x;
-		str += y;
-		str += v;
+		str += to_string(x);
+		str += to_string(y);
+		str += to_string(v);
 	}
-	//BOOST_CHECK( str.compare("100100314") == 0 );
+	BOOST_CHECK( str.compare("100100314") == 0 );
 }
 
 
