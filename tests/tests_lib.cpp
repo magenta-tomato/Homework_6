@@ -3,6 +3,7 @@
 #include "Matrix.h"
 #include <boost/test/unit_test.hpp>
 #include <boost/test/unit_test_parameters.hpp>
+using namespace boost::unit_test;
 
 BOOST_AUTO_TEST_SUITE(test_version)
 
